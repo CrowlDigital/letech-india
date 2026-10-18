@@ -4,8 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LeTech India – Leather Care &amp; Restoration</title>
-<meta name="description" content="LeTech care & restoration – UK-developed premium materials for leather cleaning, protection and restoration. Made in Northampton, UK. Professional leather care studios in India.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta name="description" content="LeTech care & restoration – UK-developed premium materials for leather cleaning, protection and restoration. Made in Northampton, UK. Professional leather care and restoration in India."><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -80,8 +79,8 @@
     linear-gradient(0deg,transparent 30%,#fff 30%,#fff 70%,transparent 70%),#012169}
   .made-uk .sep{width:1px;height:28px;background:#1f3a7a}
   .hero-visual{position:relative}
-  .hero-visual .img{position:absolute;inset:0;clip-path:polygon(28% 0,100% 0,100% 100%,0 100%);
-    background-image:url('https://images.unsplash.com/photo-1786561048051-191fb1075f6d?auto=format&fit=crop&w=1600&q=80'),linear-gradient(160deg,#e9e1d6 0%,#cbbba6 45%,#8f7c66 100%)}
+  .hero-visual .img{position:absolute;inset:0;background-position:center 40%;clip-path:polygon(28% 0,100% 0,100% 100%,0 100%);
+    background-image:url('images/hero-seat.jpg'),linear-gradient(160deg,#e9e1d6 0%,#cbbba6 45%,#8f7c66 100%)}
   .hero-visual::before{content:"";position:absolute;top:0;bottom:0;left:calc(28% - 14px);width:5px;background:var(--orange);transform:skewX(-15.5deg);transform-origin:top;z-index:3}
 
   /* Stats band */
@@ -145,7 +144,6 @@
   .ppf-list{list-style:none;display:grid;gap:14px;margin-top:30px}
   .ppf-list li{display:flex;align-items:center;gap:16px;padding-bottom:12px;border-bottom:2px solid rgba(242,102,27,.6);font-weight:500;letter-spacing:.04em;text-transform:uppercase;font-size:.9rem}
   .ppf-list b{width:46px;height:46px;border-radius:50%;border:1.5px solid #fff;display:grid;place-items:center;font-size:.8rem;flex:none}
-  .ppf .img{aspect-ratio:1;border-radius:50%;border:5px solid var(--orange);background-image:url('images/liquid-ppf.jpg'),radial-gradient(circle at 40% 35%,#c06a33,#5b2a10 70%)}
 
   /* Services */
   .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
@@ -219,7 +217,6 @@
 
   /* Contact */
   .contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px}
-  .studio .img{aspect-ratio:16/10;border-radius:var(--radius);background-image:url('images/pune-studio.jpg'),linear-gradient(160deg,#2b2b2b,#0d0d0d)}
   .studio .img::before{content:"";position:absolute;inset:30% 20% 30% 20%;background:#f2b318;opacity:.18;border-radius:6px}
   .c-card{border:1px solid var(--line);border-radius:var(--radius);padding:36px}
   .c-row{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
@@ -240,6 +237,22 @@
   .f-bottom{margin-top:48px;padding-top:24px;border-top:1px solid #262626;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.8rem}
   .wa-float{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:60}
   .wa-float svg{width:28px;height:28px;fill:#fff}
+
+  /* Brand assets (Oct 2026 asset pack) */
+  .logo-img{display:block;height:46px;width:auto;align-self:flex-start}
+  footer .logo-img{height:52px}
+  .made-uk-img{height:40px;width:auto;margin-top:44px;align-self:flex-start}
+  .ind img{width:64px;height:64px;margin:0 auto 12px;display:block}
+  .expert-badge-img{height:54px;width:auto}
+  .tech .badge-img{width:92px;height:92px;object-fit:contain;margin-bottom:18px;display:block}
+  .feat img{width:34px;height:34px;margin:0 auto 6px;display:block;object-fit:contain}
+  .lecademy-img{height:62px;width:auto;margin:26px 0 8px;display:block}
+  .acad-photos .img.wide{grid-column:1 / -1;aspect-ratio:16/8}
+  .svc .img.ba-split .tag{position:absolute;top:12px;background:rgba(0,0,0,.65);color:#fff;font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:20px}
+  .svc .img.ba-split .tag.l{left:12px}.svc .img.ba-split .tag.r{right:12px}
+  .res-logo-svg{background:#000;border:0;padding:6px}
+  .res-logo-svg svg{height:98px;width:auto}
+  .contact-intro .lead{margin-top:6px}
 
   /* Responsive */
   @media (max-width:1024px){
@@ -281,14 +294,10 @@
 
 <header>
   <div class="wrap nav">
-    <a href="#top" class="logo" aria-label="LeTech care & restoration">
-      <span class="word"><span class="le">Le</span>Tech<sup>®</sup></span>
-      <span class="tag">care <b>&amp;</b> restoration</span>
-    </a>
+    <a href="#top" class="logo" aria-label="LeTech care &amp; restoration"><img class="logo-img" src="brand/letech-logo.png" alt="LeTech care &amp; restoration"></a>
     <ul class="menu" id="menu">
       <li><a href="#expert-line">Expert Line</a></li>
       <li><a href="#services">Services</a></li>
-      <!-- SLOT:nav-network -->
       <li><a href="#lecademy">Training</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -312,11 +321,10 @@
       <p class="lead">Premium materials for leather care and restoration, developed in Northampton, UK, and now applied by trained professionals across India.</p>
       <div class="hero-actions" style="margin-top:30px">
         <a href="#expert-line" class="btn btn-primary">Explore Expert Line</a>
-        <a href="#services" class="btn btn-ghost">Our Services</a><!-- SLOT:hero-button (was Find a Restorer) -->
-      </div>
-      <div class="made-uk"><span class="flag"></span><span class="sep"></span><span>MADE IN<br><b style="font-size:1.1rem">UK</b></span></div>
+        <a href="#services" class="btn btn-ghost">Our Services</a>      </div>
+      <img class="made-uk-img" src="brand/made-in-uk.png" alt="Made in UK">
     </div>
-    <div class="hero-visual"><div class="img" data-label="https://images.unsplash.com/photo-1786561048051-191fb1075f6d?auto=format&fit=crop&w=1600&q=80"></div></div>
+    <div class="hero-visual"><div class="img" data-label="images/hero-seat.jpg"></div></div>
   </div>
 </section>
 
@@ -340,8 +348,7 @@
       <div class="rule"></div>
       <p class="lead">Specialist developer and supplier of unique premium materials for leather care and restoration. Our head office and production facilities are in Northampton, the leather capital of the world.</p>
       <p>We work alongside the leading leather institutions in the UK, the BLC Leather Technology Centre and the University of Northampton, both based in Northampton and both our partners in leather technology. That is what allows us to create some of the most innovative leather care products in the world.</p>
-      <p>LeTech India is building a fast-growing network of studios, bringing professional cleaning, protection and restoration to more cities every quarter.</p><!-- SLOT:about-network-line -->
-      <div class="partners-row">
+      <p>LeTech India is growing fast, bringing professional cleaning, protection and restoration to more cities every quarter.</p>      <div class="partners-row">
         <span class="chip">BLC Leather Technology Centre</span>
         <span class="chip">University of Northampton</span>
         <span class="chip">Northampton, UK</span>
@@ -357,12 +364,12 @@
     <h2>Solutions for the widest range of industries</h2>
     <p class="lead" style="margin-top:14px">Cars, aircraft, yachts, furniture, handbags and footwear. Wherever there is leather, there is a LeTech solution.</p>
     <div class="ind-grid">
-      <div class="ind"><svg viewBox="0 0 48 48"><path d="M6 30h36v6H6zM10 30l5-9h18l6 9"/><circle cx="14" cy="36" r="3"/><circle cx="34" cy="36" r="3"/></svg><h4>Automotive</h4></div>
-      <div class="ind"><svg viewBox="0 0 48 48"><path d="M4 28l16-4 8-16 4 1-4 15 14 2 2 4-16 2-8 10-4-1 4-10-14 2z"/></svg><h4>Aviation</h4></div>
-      <div class="ind"><svg viewBox="0 0 48 48"><path d="M6 32h36l-5 8H11zM12 32V22h22l6 10M18 22v-6h10v6"/></svg><h4>Marine</h4></div>
-      <div class="ind"><svg viewBox="0 0 48 48"><path d="M8 34V24a4 4 0 0 1 8 0v4h16v-4a4 4 0 0 1 8 0v10zM14 22v-6a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v6M10 34v4M38 34v4"/></svg><h4>Furniture</h4></div>
-      <div class="ind"><svg viewBox="0 0 48 48"><path d="M10 18h28l-3 22H13zM18 18v-4a6 6 0 0 1 12 0v4"/></svg><h4>Handbags</h4></div>
-      <div class="ind"><svg viewBox="0 0 48 48"><path d="M6 32c8 0 12-4 14-10l8 2c2 4 8 6 14 6v6H6z"/></svg><h4>Footwear</h4></div>
+      <div class="ind"><img src="brand/ind-automotive.png" alt=""><h4>Automotive</h4></div>
+      <div class="ind"><img src="brand/ind-aviation.png" alt=""><h4>Aviation</h4></div>
+      <div class="ind"><img src="brand/ind-marine.png" alt=""><h4>Marine</h4></div>
+      <div class="ind"><img src="brand/ind-furniture.png" alt=""><h4>Furniture</h4></div>
+      <div class="ind"><img src="brand/ind-handbags.png" alt=""><h4>Handbags</h4></div>
+      <div class="ind"><img src="brand/ind-footwear.png" alt=""><h4>Footwear</h4></div>
     </div>
   </div>
 </section>
@@ -375,21 +382,21 @@
         <span class="eyebrow">Our Technology</span>
         <h2>Professional-grade chemistry</h2>
       </div>
-      <div class="expert-badge">EXPERT <span>LINE</span></div>
+      <img class="expert-badge-img" src="brand/expert-line.png" alt="Expert Line">
     </div>
     <div class="tech-grid">
       <div class="tech">
-        <div class="badge b-bio">BIO<br>CARE</div>
+        <img class="badge-img" src="brand/biocare.png" alt="BIOCARE formula">
         <h3>BIOCARE Formula</h3>
         <p>Designed to be safe for luxury leather. An eco-friendly, water-based formula that pairs strong cleaning performance with gentle ingredients for high-end materials.</p>
       </div>
       <div class="tech">
-        <div class="badge b-x">X</div>
+        <img class="badge-img" src="brand/x-guard.png" alt="X-Guard">
         <h3>X-Guard Protection</h3>
         <p>Long-lasting protection that extends the life of leather against environmental damage, keeps its aesthetic quality and improves durability.</p>
       </div>
       <div class="tech">
-        <div class="badge b-vib">Vibrant<br>Plus+</div>
+        <img class="badge-img" src="brand/vibrant-plus.png" alt="Vibrant Plus+ Technology">
         <h3>Vibrant Plus+ Technology</h3>
         <p>A water-based polyurethane colourant system for vibrant, durable, professional results in leather repair, restoration and recolouring.</p>
       </div>
@@ -424,10 +431,10 @@
         <div class="prod"><h4>Leather Protection Cream X-Guard</h4><p>Our latest professional protection formula. Shields modern leathers against dye transfer, ink marks, UV and colour fading, and repels water and dirt.</p></div>
         <div class="prod"><h4>Alcantara &amp; Fabric Protection Cream</h4><p>BIOCARE protection for Alcantara and fabric that maintains original colour, softness and durability.</p></div>
         <div class="feats">
-          <div class="feat"><svg viewBox="0 0 32 32"><path d="M8 6c-3 5-4 7-4 9a4 4 0 0 0 8 0c0-2-1-4-4-9zM22 6c-3 5-4 7-4 9a4 4 0 0 0 8 0c0-2-1-4-4-9zM4 26h24"/></svg>Water Repellent</div>
-          <div class="feat"><svg viewBox="0 0 32 32"><path d="M16 3l11 4v8c0 7-5 12-11 14C10 27 5 22 5 15V7z"/></svg>Scratch Proof</div>
-          <div class="feat"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="6"/><path d="M16 3v4M16 25v4M3 16h4M25 16h4M7 7l3 3M22 22l3 3M25 7l-3 3M10 22l-3 3"/></svg>UV Protection</div>
-          <div class="feat"><svg viewBox="0 0 32 32"><path d="M16 5c5 6 8 10 8 14a8 8 0 0 1-16 0c0-4 3-8 8-14z"/><path d="M12 19a4 4 0 0 0 4 4"/></svg>Ink Mark Resistance</div>
+          <div class="feat"><img src="brand/feat-water.png" alt="">Water Repellent</div>
+          <div class="feat"><img src="brand/feat-scratch.png" alt="">Scratch Proof</div>
+          <div class="feat"><img src="brand/feat-uv.png" alt="">UV Protection</div>
+          <div class="feat"><img src="brand/feat-ink.png" alt="">Ink Mark Resistance</div>
         </div>
       </div>
     </div>
@@ -447,7 +454,6 @@
   </div>
 </section>
 
-<!-- SLOT:liquid-ppf -->
 <!-- SERVICES -->
 <section id="services">
   <div class="wrap">
@@ -464,7 +470,7 @@
         <div class="svc-body"><h3>Shoe Restoration &amp; Colouring</h3><p>Worn and damaged footwear restored to like-new, reviving original beauty, comfort and durability, and extending the life of every pair.</p></div>
       </div>
       <div class="svc">
-        <div class="img" data-label="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1000&q=80" style="background-image:url('https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1000&q=80'),linear-gradient(150deg,#8b86b8,#4a466e)"></div>
+        <div class="img ba-split" data-label="images/svc-bags.jpg" style="background-image:url('images/svc-bags.jpg'),linear-gradient(150deg,#8b86b8,#4a466e)"><span class="tag l">Before</span><span class="tag r">After</span></div>
         <div class="svc-body"><h3>Bag Restoration &amp; Colouring</h3><p>Meticulous restoration and customisation of luxury bags, preserving the elegance and value of your designer pieces.</p></div>
       </div>
     </div>
@@ -476,7 +482,6 @@
   </div>
 </section>
 
-<!-- SLOT:network -->
 <!-- LAB TESTING -->
 <section class="lab">
   <div class="wrap lab-grid">
@@ -500,15 +505,13 @@
   <div class="wrap acad-grid">
     <div>
       <div class="acad-title">LEATHER<br><span class="le">RESTORATION</span><span class="t">TRAINING</span></div>
-      <div class="lecademy"><b>Le</b>cademy</div>
-      <p style="letter-spacing:.2em;color:var(--orange);font-weight:500;font-size:.85rem">LEARN · MASTER · RESTORE</p>
+      <img class="lecademy-img" src="brand/lecademy.png" alt="Lecademy · Learn &amp; Practice">
       <p class="lead" style="margin-top:20px">Hands-on professional training in cleaning, colour matching, repair and recolouring, taught with Expert Line materials by LeTech trainers. For detailers, upholsterers, restorers and new entrepreneurs.</p>
       <a href="https://wa.me/918637769807?text=Hi%20LeTech%2C%20I%27d%20like%20to%20know%20about%20Lecademy%20training" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:26px">Enquire About Training</a>
     </div>
     <div class="acad-photos">
-      <div class="img" data-label="images/training-1.jpg" style="background-image:url('images/training-1.jpg'),linear-gradient(150deg,#ef7a33,#7a2d07)"></div>
+      <div class="img wide" data-label="images/lecademy-trainer.jpg" style="background-image:url('images/lecademy-trainer.jpg'),linear-gradient(150deg,#f2f2f2,#cfcfcf)"></div>
       <div class="img" data-label="images/training-2.jpg" style="background-image:url('images/training-2.jpg'),linear-gradient(150deg,#d9d2c8,#8c8274)"></div>
-      <div class="img" data-label="images/training-3.jpg" style="background-image:url('images/training-3.jpg'),linear-gradient(150deg,#6a74c9,#e2523a)"></div>
       <div class="img" data-label="images/training-4.jpg" style="background-image:url('images/training-4.jpg'),linear-gradient(150deg,#3b3b3b,#ef7a33)"></div>
     </div>
   </div>
@@ -517,24 +520,25 @@
 <!-- CONTACT -->
 <section id="contact">
   <div class="wrap contact-grid">
-    <div class="studio">
-      <span class="eyebrow">LeTech Leather Studio · Pune</span>
-      <h2>Visit the studio</h2>
+    <div class="contact-intro">
+      <span class="eyebrow">Contact</span>
+      <h2>Talk to <span class="le">Le</span>Tech India</h2>
       <div class="rule"></div>
-      <div class="img" data-label="images/pune-studio.jpg"></div>
+      <p class="lead">Product enquiries, training and trade. Reach us on WhatsApp, phone or email and we will get back to you quickly.</p>
     </div>
     <div class="c-card">
       <h3 style="font-size:1.4rem;margin-bottom:10px">Contact us</h3>
       <div class="c-row"><svg viewBox="0 0 24 24"><path d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        <div><small>Address</small>Inter Continental Venture<br>#2010 Ground Floor, Creaticity Mall<br>Shastrinagar, Pune 411006, India</div></div>
+        <div><small>Registered Office</small>Inter Continental Venture<br>Unit #2010, Ground Floor, Building 2<br>Creaticity, Yerawada<br>Pune 411006, India</div></div>
       <div class="c-row"><svg viewBox="0 0 24 24"><path d="M22 17v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3l2 5-2.5 1.5a11 11 0 0 0 6 6L14 12l5 2z"/></svg>
-        <div><small>Call for an appointment</small><a href="tel:+918637769807">+91 86377 69807</a></div></div>
+        <div><small>Call us</small><a href="tel:+918637769807">+91 86377 69807</a></div></div>
       <div class="c-row"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-13 8l-5 1 1-5a9 9 0 1 1 17-4z"/></svg>
         <div><small>WhatsApp enquiries · +91 86377 69807</small><a href="https://wa.me/918637769807?text=Hi%20LeTech%2C%20I%20have%20an%20enquiry" target="_blank" rel="noopener">Message us on WhatsApp</a></div></div>
+      <div class="c-row"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        <div><small>Email</small><a href="mailto:admin@le-tech.in">admin@le-tech.in</a></div></div>
       <div class="c-row"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
         <div><small>Instagram</small><a href="https://www.instagram.com/letechindia/" target="_blank" rel="noopener">@letechindia</a></div></div>
-      <a href="https://wa.me/918637769807?text=Hi%20LeTech%2C%20I%20have%20an%20enquiry" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center">Book an Appointment</a>
-    </div>
+      <a href="https://wa.me/918637769807?text=Hi%20LeTech%2C%20I%20have%20an%20enquiry" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center">Enquire on WhatsApp</a>    </div>
   </div>
 </section>
 
@@ -544,12 +548,11 @@
   <div class="wrap">
     <div class="f-grid">
       <div>
-        <a href="#top" class="logo"><span class="word"><span class="le">Le</span>Tech<sup>®</sup></span><span class="tag">care <b>&amp;</b> restoration</span></a>
-        <p style="margin-top:18px;max-width:320px">Premium leather care and restoration materials, made in Northampton, UK. Professional leather care studios in India.</p><!-- SLOT:footer-blurb -->
-      </div>
-      <div><h5>Expert Line</h5><ul><li><a href="#expert-line">Cleaners</a></li><li><a href="#expert-line">Protection</a></li><li><a href="#expert-line">Colourant</a></li><!-- SLOT:footer-ppf --></ul></div>
-      <div><h5>LeTech India</h5><ul><li><a href="#services">Restoration Services</a></li><!-- SLOT:footer-network --><li><a href="#lecademy">Lecademy Training</a></li><li><a href="#about">About Us</a></li></ul></div>
-      <div><h5>Get in touch</h5><ul><li><a href="tel:+918637769807">+91 86377 69807</a></li><li><a href="https://wa.me/918637769807?text=Hi%20LeTech%2C%20I%20have%20an%20enquiry" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="https://www.instagram.com/letechindia/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://le-tech.co.uk/" target="_blank" rel="noopener">LeTech UK</a></li></ul></div>
+        <a href="#top" class="logo"><img class="logo-img" src="brand/letech-logo-white.png" alt="LeTech care &amp; restoration"></a>
+        <p style="margin-top:18px;max-width:320px">Premium leather care and restoration materials, made in Northampton, UK. Professional leather care and restoration in India.</p>      </div>
+      <div><h5>Expert Line</h5><ul><li><a href="#expert-line">Cleaners</a></li><li><a href="#expert-line">Protection</a></li><li><a href="#expert-line">Colourant</a></li></ul></div>
+      <div><h5>LeTech India</h5><ul><li><a href="#services">Restoration Services</a></li><li><a href="#lecademy">Lecademy Training</a></li><li><a href="#about">About Us</a></li></ul></div>
+      <div><h5>Get in touch</h5><ul><li><a href="tel:+918637769807">+91 86377 69807</a></li><li><a href="https://wa.me/918637769807?text=Hi%20LeTech%2C%20I%20have%20an%20enquiry" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:admin@le-tech.in">admin@le-tech.in</a></li><li><a href="https://www.instagram.com/letechindia/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://le-tech.co.uk/" target="_blank" rel="noopener">LeTech UK</a></li></ul></div>
     </div>
     <div class="f-bottom">
       <span>© <span id="yr">2026</span> LeTech India. All rights reserved.</span>
