@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LeTech India – Leather Care &amp; Restoration</title>
+<meta name="description" content="LeTech care & restoration – UK-developed premium materials for leather cleaning, protection and restoration. Made in Northampton, UK. Professional leather care and restoration in India."><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --orange:#F2661B;
+    --orange-dark:#D4520E;
+    --ink:#1B1B1B;
+    --ink-soft:#3A3A3A;
+    --muted:#6B6B6B;
+    --line:#E6E6E6;
+    --paper:#FFFFFF;
+    --mist:#F5F5F4;
+    --black:#0E0E0E;
+    --radius:22px;
+    --wrap:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Poppins',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+  .le{color:var(--orange)}
+  h1,h2,h3{line-height:1.2;font-weight:600;letter-spacing:-.01em}
+  h2{font-size:clamp(1.7rem,3.2vw,2.5rem)}
+  .eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);margin-bottom:14px}
+  .eyebrow::before{content:"";width:34px;height:4px;border-radius:4px;background:var(--orange)}
+  .rule{width:90px;height:3px;background:var(--orange);margin:18px 0 26px}
+  .lead{font-size:1.06rem;color:var(--ink-soft);max-width:760px}
+  section{padding:96px 0}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:40px;font-weight:500;font-size:.95rem;transition:.2s}
+  .btn-primary{background:var(--orange);color:#fff}
+  .btn-primary:hover{background:var(--orange-dark)}
+  .btn-ghost{border:1.5px solid var(--ink);color:var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:#fff}
+
+  /* Image slots: drop files into /images with these names. Gradient shows until then. */
+  .img{background-color:#2a2522;background-size:cover;background-position:center;position:relative;overflow:hidden}
+  .img::after{display:none;content:attr(data-label);position:absolute;left:14px;bottom:12px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+  .img.has-photo::after{display:none}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+  .logo{display:flex;flex-direction:column;line-height:1}
+  .logo .word{font-size:1.85rem;font-weight:600;letter-spacing:-.03em;color:var(--ink)}
+  .logo .word sup{font-size:.55rem;font-weight:400;vertical-align:top;margin-left:2px}
+  .logo .tag{font-size:.72rem;font-weight:400;color:var(--ink-soft);margin-top:4px;letter-spacing:.01em}
+  .logo .tag b{display:inline-grid;place-items:center;width:13px;height:13px;border-radius:50%;background:var(--ink);color:#fff;font-size:.5rem;font-weight:600;margin:0 2px;vertical-align:1px}
+  .menu{display:flex;gap:30px;list-style:none;font-size:.92rem;font-weight:500}
+  .menu a{position:relative;padding:6px 0}
+  .menu a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--orange);transition:.25s}
+  .menu a:hover::after{width:100%}
+  .nav-cta{display:flex;align-items:center;gap:14px}
+  .burger{display:none;background:none;border:0;width:40px;height:40px;cursor:pointer}
+  .burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px auto;transition:.25s}
+
+  /* Hero */
+  .hero{position:relative;padding:0;overflow:hidden;background:linear-gradient(135deg,#fafafa 0%,#ececec 100%)}
+  .hero-grid{display:grid;grid-template-columns:1fr 1fr;min-height:640px}
+  .hero-copy{padding:96px 40px 80px 0;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+  .hero h1{font-size:clamp(2.6rem,5.6vw,4.4rem);font-weight:500;line-height:1.05;margin-bottom:18px}
+  .pill{display:inline-block;border:2px solid var(--ink);border-radius:60px;padding:2px 26px 6px;color:var(--orange)}
+  .trio{display:flex;gap:14px;align-items:center;font-weight:600;font-size:1.1rem;margin:22px 0 34px;flex-wrap:wrap}
+  .trio i{width:7px;height:7px;border-radius:50%;background:var(--orange);display:inline-block}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .made-uk{display:flex;align-items:center;gap:10px;margin-top:44px;font-size:.75rem;font-weight:600;color:#1f3a7a;letter-spacing:.05em}
+  .made-uk .flag{width:46px;height:28px;border-radius:2px;background:
+    linear-gradient(90deg,transparent 42%,#c8102e 42%,#c8102e 58%,transparent 58%),
+    linear-gradient(0deg,transparent 38%,#c8102e 38%,#c8102e 62%,transparent 62%),
+    linear-gradient(90deg,transparent 36%,#fff 36%,#fff 64%,transparent 64%),
+    linear-gradient(0deg,transparent 30%,#fff 30%,#fff 70%,transparent 70%),#012169}
+  .made-uk .sep{width:1px;height:28px;background:#1f3a7a}
+  .hero-visual{position:relative}
+  .hero-visual .img{position:absolute;inset:0;background-position:center 40%;clip-path:polygon(28% 0,100% 0,100% 100%,0 100%);
+    background-image:url('../images/hero-seat.jpg'),linear-gradient(160deg,#e9e1d6 0%,#cbbba6 45%,#8f7c66 100%)}
+  .hero-visual::before{content:"";position:absolute;top:0;bottom:0;left:calc(28% - 14px);width:5px;background:var(--orange);transform:skewX(-15.5deg);transform-origin:top;z-index:3}
+
+  /* Stats band */
+  .stats{background:var(--black);color:#fff;padding:46px 0}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .stat b{display:block;font-size:2.4rem;font-weight:600;color:var(--orange);line-height:1}
+  .stat span{font-size:.9rem;color:#cfcfcf}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:center}
+  .about .img{border-radius:var(--radius);aspect-ratio:4/3.2;background-image:url('../images/northampton.jpg'),linear-gradient(150deg,#d9dde2,#9aa3ad)}
+  .about p+p{margin-top:16px}
+  .partners-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+  .chip{border:1px solid var(--line);border-radius:40px;padding:8px 16px;font-size:.82rem;font-weight:500;background:#fff}
+
+  /* Industries */
+  .industries{background:var(--mist)}
+  .ind-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:44px}
+  .ind{background:#fff;border-radius:18px;padding:28px 16px;text-align:center;border:1px solid var(--line);transition:.2s}
+  .ind:hover{border-color:var(--orange);transform:translateY(-3px)}
+  .ind svg{width:44px;height:44px;margin:0 auto 12px;stroke:var(--orange);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .ind h4{font-size:.95rem;font-weight:600}
+
+  /* Expert line technologies */
+  .tech-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap}
+  .expert-badge{display:inline-block;background:var(--black);color:#fff;border-radius:40px;padding:12px 34px;font-size:1.6rem;font-weight:500;letter-spacing:.04em}
+  .expert-badge span{color:var(--orange)}
+  .tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+  .tech{border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;position:relative;background:#fff}
+  .tech::after{content:"";position:absolute;left:30px;right:30px;bottom:0;height:3px;background:var(--orange);border-radius:3px}
+  .tech .badge{width:76px;height:76px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:.72rem;text-align:center;line-height:1.1;margin-bottom:20px;color:#fff}
+  .b-bio{background:radial-gradient(circle at 35% 30%,#2f6fd6,#0f3a8a);border:4px solid #4fae3b}
+  .b-x{background:#3a3a3a;color:#f6a21a!important;font-size:1.6rem!important}
+  .b-vib{background:#fff;color:var(--ink)!important;border:5px solid transparent;background-image:linear-gradient(#fff,#fff),conic-gradient(#e63946,#f4a261,#e9c46a,#2a9d8f,#457b9d,#7b2cbf,#e63946);background-origin:border-box;background-clip:padding-box,border-box}
+  .tech h3{font-size:1.2rem;margin-bottom:10px}
+  .tech p{color:var(--ink-soft);font-size:.95rem}
+
+  /* Product lines */
+  .lines{background:var(--mist)}
+  .line-block{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:center;padding:56px 0;border-bottom:1px solid var(--line)}
+  .line-block:last-child{border-bottom:0}
+  .line-block.flip .line-media{order:2}
+  .line-media .img{aspect-ratio:5/4;border-radius:var(--radius) 90px var(--radius) var(--radius)}
+  .line-block h3{font-size:1.9rem;margin-bottom:4px}
+  .line-block .sub{font-size:1.05rem;font-weight:500;color:var(--ink-soft)}
+  .prod{padding:18px 0;border-top:1px solid var(--line)}
+  .prod:first-of-type{border-top:0}
+  .prod h4{font-size:1.02rem;font-weight:600;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  .prod h4::before{content:"";width:8px;height:8px;background:var(--orange);border-radius:50%}
+  .prod p{font-size:.93rem;color:var(--ink-soft)}
+  .feats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}
+  .feat{background:#fff;border-radius:14px;padding:14px 10px;text-align:center;font-size:.78rem;font-weight:500;border:1px solid var(--line)}
+  .feat svg{width:28px;height:28px;margin:0 auto 6px;stroke:var(--orange);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+  /* PPF spotlight */
+  .ppf{background:linear-gradient(120deg,#1a0f08 0%,#5a2a10 55%,#a2501f 100%);color:#fff;position:relative;overflow:hidden}
+  .ppf::before{content:"";position:absolute;right:-120px;top:-120px;width:520px;height:520px;border-radius:50%;border:2px solid rgba(242,102,27,.45)}
+  .ppf-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center;position:relative}
+  .ppf h2 span{color:var(--orange)}
+  .ppf .lead{color:#efe4dc}
+  .ppf-list{list-style:none;display:grid;gap:14px;margin-top:30px}
+  .ppf-list li{display:flex;align-items:center;gap:16px;padding-bottom:12px;border-bottom:2px solid rgba(242,102,27,.6);font-weight:500;letter-spacing:.04em;text-transform:uppercase;font-size:.9rem}
+  .ppf-list b{width:46px;height:46px;border-radius:50%;border:1.5px solid #fff;display:grid;place-items:center;font-size:.8rem;flex:none}
+
+  /* Services */
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+  .svc{border-radius:var(--radius);overflow:hidden;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
+  .svc .img{aspect-ratio:4/3}
+  .svc-body{padding:26px 26px 30px}
+  .svc h3{font-size:1.2rem;margin-bottom:8px}
+  .svc p{font-size:.94rem;color:var(--ink-soft)}
+  .ba{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+  .ba figure .img{aspect-ratio:4/3;border-radius:18px}
+  .ba figcaption{text-align:center;font-weight:600;margin-top:10px;font-size:.92rem}
+
+  /* Restorers powered by LeTech */
+  .restorers{background:var(--black);color:#fff}
+  .restorers .lead{color:#c9c9c9}
+  .res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px}
+  .res{background:#181818;border:1px solid #2b2b2b;border-radius:var(--radius);padding:30px 24px;display:flex;flex-direction:column;transition:.25s}
+  .res:hover{border-color:var(--orange);transform:translateY(-4px)}
+  .res-logo{height:110px;border-radius:16px;border:1.5px dashed #444;display:grid;place-items:center;margin-bottom:22px;background:#111;color:#666;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;overflow:hidden}
+  .res-logo img{max-height:90px;width:auto;object-fit:contain}
+  .res h3{font-size:1.18rem}
+  .res .city{color:var(--orange);font-size:.85rem;font-weight:500;margin:4px 0 16px}
+  .res p{font-size:.88rem;color:#b5b5b5;flex:1}
+  .res .map{margin-top:20px;display:inline-flex;align-items:center;gap:8px;font-size:.88rem;font-weight:500;color:#fff;border-top:1px solid #2b2b2b;padding-top:16px}
+  .res .map svg{width:18px;height:18px;stroke:var(--orange);fill:none;stroke-width:2}
+  .res-logo-img{background:#fff;border:0;padding:10px}
+  .res-logo-img img{max-height:92px}
+  .res-logo-dark{background:#000;border:0;padding:12px}
+  .res-logo-dark img{max-height:86px}
+  .res .map.enq{margin-top:10px;border-top:0;padding-top:0;color:#25D366}
+  .res .map.enq svg{stroke:#25D366}
+  .res.soon{opacity:.75}
+  .res-note{margin-top:40px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;border-top:1px solid #2b2b2b;padding-top:30px}
+  .res-note p{color:#c9c9c9;max-width:620px}
+
+  /* Trade partners */
+  .trade{background:var(--mist)}
+  .trade-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:46px}
+  .tp{display:grid;grid-template-columns:150px 1fr;gap:24px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:.25s}
+  .tp:hover{border-color:var(--orange);transform:translateY(-3px)}
+  .tp .res-logo{height:150px;margin:0;background:var(--mist);border-color:#ccc;color:#999}
+  .tp-tag{display:inline-block;background:var(--orange);color:#fff;font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:4px 12px;border-radius:30px;margin-bottom:10px}
+  .tp h3{font-size:1.2rem}
+  .tp .city{color:var(--orange);font-size:.85rem;font-weight:500;margin:2px 0 10px}
+  .tp p{font-size:.9rem;color:var(--ink-soft)}
+  .tp-links{display:flex;gap:20px;flex-wrap:wrap;margin-top:14px}
+  .tp .map{display:inline-flex;align-items:center;gap:8px;font-size:.88rem;font-weight:500}
+  .tp .map svg{width:18px;height:18px;stroke:var(--orange);fill:none;stroke-width:2}
+  .tp .map.enq{color:#1a9e4b}
+  .tp .map.enq svg{stroke:#1a9e4b}
+  .trade-note{margin-top:40px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:30px}
+  .trade-note p{color:var(--ink-soft);max-width:620px}
+
+  /* Lab */
+  .lab-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center}
+  .lab .img{aspect-ratio:4/3;border-radius:var(--radius);border:4px solid var(--orange);background-image:url('../images/blc-lab.jpg'),linear-gradient(150deg,#eef1f4,#b9c2cc)}
+  .acc{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+  .acc div{border-left:3px solid var(--orange);padding-left:14px}
+  .acc b{display:block;color:var(--orange);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+  .acc span{font-size:.86rem;color:var(--ink-soft)}
+
+  /* Academy */
+  .academy{background:var(--mist)}
+  .acad-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:center}
+  .acad-title{font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.05}
+  .acad-title .t{display:block;font-weight:400;letter-spacing:.45em;font-size:.5em;margin-top:10px}
+  .lecademy{display:inline-flex;align-items:center;gap:6px;font-size:2rem;font-weight:600;margin:26px 0 8px}
+  .lecademy b{width:58px;height:58px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-size:1.5rem}
+  .acad-photos{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .acad-photos .img{aspect-ratio:4/3;border-radius:16px;border:2px solid var(--orange)}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px}
+  .studio .img::before{content:"";position:absolute;inset:30% 20% 30% 20%;background:#f2b318;opacity:.18;border-radius:6px}
+  .c-card{border:1px solid var(--line);border-radius:var(--radius);padding:36px}
+  .c-row{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .c-row:last-of-type{border-bottom:0}
+  .c-row svg{width:22px;height:22px;stroke:var(--orange);fill:none;stroke-width:1.8;flex:none;margin-top:3px}
+  .c-row small{display:block;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.1em}
+  .c-row a:hover{color:var(--orange)}
+
+  /* Footer */
+  footer{background:var(--black);color:#bdbdbd;padding:64px 0 30px;font-size:.9rem}
+  .f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+  footer .logo .word{color:#fff}
+  footer .logo .tag{color:#bdbdbd}
+  footer .logo .tag b{background:#fff;color:#000}
+  footer h5{color:#fff;font-size:.95rem;font-weight:600;margin-bottom:14px}
+  footer ul{list-style:none;display:grid;gap:8px}
+  footer a:hover{color:var(--orange)}
+  .f-bottom{margin-top:48px;padding-top:24px;border-top:1px solid #262626;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.8rem}
+  .wa-float{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:60}
+  .wa-float svg{width:28px;height:28px;fill:#fff}
+
+  /* Brand assets (Oct 2026 asset pack) */
+  .logo-img{display:block;height:46px;width:auto;align-self:flex-start}
+  footer .logo-img{height:52px}
+  .made-uk-img{height:40px;width:auto;margin-top:44px;align-self:flex-start}
+  .ind img{width:64px;height:64px;margin:0 auto 12px;display:block}
+  .expert-badge-img{height:54px;width:auto}
+  .tech .badge-img{width:92px;height:92px;object-fit:contain;margin-bottom:18px;display:block}
+  .feat img{width:34px;height:34px;margin:0 auto 6px;display:block;object-fit:contain}
+  .lecademy-img{height:62px;width:auto;margin:26px 0 8px;display:block}
+  .acad-photos .img.wide{grid-column:1 / -1;aspect-ratio:16/8}
+  .svc .img.ba-split .tag{position:absolute;top:12px;background:rgba(0,0,0,.65);color:#fff;font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:20px}
+  .svc .img.ba-split .tag.l{left:12px}.svc .img.ba-split .tag.r{right:12px}
+  .res-logo-svg{background:#000;border:0;padding:6px}
+  .res-logo-svg svg{height:98px;width:auto}
+  .contact-intro .lead{margin-top:6px}
+
+  /* Responsive */
+  @media (max-width:1024px){
+    .ind-grid{grid-template-columns:repeat(3,1fr)}
+    .res-grid{grid-template-columns:repeat(2,1fr)}
+    .trade-grid{grid-template-columns:1fr}
+    .f-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:860px){
+    section{padding:70px 0}
+    .menu{position:fixed;top:76px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:10px 20px 24px;border-bottom:1px solid var(--line);transform:translateY(-130%);transition:.3s;z-index:-1}
+    .menu.open{transform:none}
+    .menu li{border-bottom:1px solid var(--line)}
+    .menu a{display:block;padding:14px 0}
+    .burger{display:block}
+    .nav-cta .btn{display:none}
+    .hero-grid,.about-grid,.line-block,.ppf-grid,.lab-grid,.acad-grid,.contact-grid{grid-template-columns:1fr}
+    .line-block.flip .line-media{order:0}
+    .hero-copy{padding:60px 0 40px}
+    .hero-visual{min-height:320px}
+    .hero-visual .img{clip-path:polygon(0 12%,100% 0,100% 100%,0 100%)}
+    .hero-visual::before{display:none}
+    .stats-grid{grid-template-columns:repeat(2,1fr)}
+    .tech-grid,.svc-grid{grid-template-columns:1fr}
+    .feats{grid-template-columns:repeat(2,1fr)}
+    .acc{grid-template-columns:1fr}
+    .ppf .img{max-width:340px;margin:0 auto;width:100%}
+  }
+  @media (max-width:560px){
+    .ind-grid{grid-template-columns:repeat(2,1fr)}
+    .res-grid,.ba{grid-template-columns:1fr}
+    .tp{grid-template-columns:1fr}
+    .tp .res-logo{height:110px}
+    .f-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo" aria-label="LeTech care &amp; restoration"><img class="logo-img" src="../brand/letech-logo.png" alt="LeTech care &amp; restoration"></a>
+    <ul class="menu" id="menu">
+      <li><a href="#expert-line">Expert Line</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#lecademy">Training</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="https://wa.me/918637769807?text=Hi%20LeTech%2C%20I%20have%20an%20enquiry" target="_blank" rel="noopener" class="btn btn-primary">Enquire Now</a>
+      <button class="burger" aria-label="Open menu" onclick="document.getElementById('menu').classList.toggle('open')"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Leather Care &amp; Restoration</span>
+      <h1>World of<br><span class="pill">Possibilities</span></h1>
+      <div class="trio">Clean <i></i> Protect <i></i> Restore</div>
+      <p class="lead">Premium materials for leather care and restoration, developed in Northampton, UK, and now applied by trained professionals across India.</p>
+      <div class="hero-actions" style="margin-top:30px">
+        <a href="#expert-line" class="btn btn-primary">Explore Expert Line</a>
+        <a href="#services" class="btn btn-ghost">Our Services</a>      </div>
+      <img class="made-uk-img" src="../brand/made-in-uk.png" alt="Made in UK">
+    </div>
+    <div class="hero-visual"><div class="img" data-label="images/hero-seat.jpg"></div></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><b>75</b><span>Countries</span></div>
+    <div class="stat"><b>28</b><span>Cities in India, and counting</span></div>
+    <div class="stat"><b>UK</b><span>Developed &amp; manufactured in Northampton</span></div>
+    <div class="stat"><b>BLC</b><span>Tested with Eurofins | BLC</span></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="img" data-label="images/northampton.jpg"></div>
+    <div>
+      <span class="eyebrow">About Us</span>
+      <h2>LeTech International Ltd</h2>
+      <div class="rule"></div>
+      <p class="lead">Specialist developer and supplier of unique premium materials for leather care and restoration. Our head office and production facilities are in Northampton, the leather capital of the world.</p>
+      <p>We work alongside the leading leather institutions in the UK, the BLC Leather Technology Centre and the University of Northampton, both based in Northampton and both our partners in leather technology. That is what allows us to create some of the most innovative leather care products in the world.</p>
+      <p>LeTech India is growing fast, bringing professional cleaning, protection and restoration to more cities every quarter.</p>      <div class="partners-row">
+        <span class="chip">BLC Leather Technology Centre</span>
+        <span class="chip">University of Northampton</span>
+        <span class="chip">Northampton, UK</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="industries">
+  <div class="wrap">
+    <span class="eyebrow">Industries</span>
+    <h2>Solutions for the widest range of industries</h2>
+    <p class="lead" style="margin-top:14px">Cars, aircraft, yachts, furniture, handbags and footwear. Wherever there is leather, there is a LeTech solution.</p>
+    <div class="ind-grid">
+      <div class="ind"><img src="../brand/ind-automotive.png" alt=""><h4>Automotive</h4></div>
+      <div class="ind"><img src="../brand/ind-aviation.png" alt=""><h4>Aviation</h4></div>
+      <div class="ind"><img src="../brand/ind-marine.png" alt=""><h4>Marine</h4></div>
+      <div class="ind"><img src="../brand/ind-furniture.png" alt=""><h4>Furniture</h4></div>
+      <div class="ind"><img src="../brand/ind-handbags.png" alt=""><h4>Handbags</h4></div>
+      <div class="ind"><img src="../brand/ind-footwear.png" alt=""><h4>Footwear</h4></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERT LINE TECHNOLOGIES -->
+<section id="expert-line">
+  <div class="wrap">
+    <div class="tech-head">
+      <div>
+        <span class="eyebrow">Our Technology</span>
+        <h2>Professional-grade chemistry</h2>
+      </div>
+      <img class="expert-badge-img" src="../brand/expert-line.png" alt="Expert Line">
+    </div>
+    <div class="tech-grid">
+      <div class="tech">
+        <img class="badge-img" src="../brand/biocare.png" alt="BIOCARE formula">
+        <h3>BIOCARE Formula</h3>
+        <p>Designed to be safe for luxury leather. An eco-friendly, water-based formula that pairs strong cleaning performance with gentle ingredients for high-end materials.</p>
+      </div>
+      <div class="tech">
+        <img class="badge-img" src="../brand/x-guard.png" alt="X-Guard">
+        <h3>X-Guard Protection</h3>
+        <p>Long-lasting protection that extends the life of leather against environmental damage, keeps its aesthetic quality and improves durability.</p>
+      </div>
+      <div class="tech">
+        <img class="badge-img" src="../brand/vibrant-plus.png" alt="Vibrant Plus+ Technology">
+        <h3>Vibrant Plus+ Technology</h3>
+        <p>A water-based polyurethane colourant system for vibrant, durable, professional results in leather repair, restoration and recolouring.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT LINES -->
+<section class="lines">
+  <div class="wrap">
+    <span class="eyebrow">Expert Line Products</span>
+    <h2>Clean. Protect. Colour.</h2>
+
+    <div class="line-block">
+      <div class="line-media"><div class="img" data-label="images/cleaners.jpg" style="background-image:url('../images/cleaners.jpg'),linear-gradient(150deg,#efe7da,#c9b79c)"></div></div>
+      <div>
+        <h3>Cleaners</h3>
+        <p class="sub">Cleaning the luxury</p>
+        <div class="rule"></div>
+        <div class="prod"><h4>Leather Ultimate Cleaner</h4><p>High-foaming BIOCARE cleaner for car interiors, furniture, bags and footwear. Safe across colours, shades and textures, leaving leather naturally soft. For non-aniline leather.</p></div>
+        <div class="prod"><h4>Suede &amp; Nubuck Cleaner</h4><p>Lifts dirt and stains from suede, split and nubuck while caring for delicate fibres. Free of solvents and abrasives.</p></div>
+        <div class="prod"><h4>Fabric &amp; Alcantara Cleaner</h4><p>BIOCARE cleaning power without the risk of fabric damage, ideal for automotive Alcantara. Keeps original colour, nap and softness.</p></div>
+      </div>
+    </div>
+
+    <div class="line-block flip">
+      <div class="line-media"><div class="img" data-label="images/protection.jpg" style="background-image:url('../images/protection.jpg'),linear-gradient(150deg,#e7d3c0,#9a5a2e)"></div></div>
+      <div>
+        <h3>Protection</h3>
+        <p class="sub">Advanced care, lasting protection</p>
+        <div class="rule"></div>
+        <div class="prod"><h4>Leather Protection Cream X-Guard</h4><p>Our latest professional protection formula. Shields modern leathers against dye transfer, ink marks, UV and colour fading, and repels water and dirt.</p></div>
+        <div class="prod"><h4>Alcantara &amp; Fabric Protection Cream</h4><p>BIOCARE protection for Alcantara and fabric that maintains original colour, softness and durability.</p></div>
+        <div class="feats">
+          <div class="feat"><img src="../brand/feat-water.png" alt="">Water Repellent</div>
+          <div class="feat"><img src="../brand/feat-scratch.png" alt="">Scratch Proof</div>
+          <div class="feat"><img src="../brand/feat-uv.png" alt="">UV Protection</div>
+          <div class="feat"><img src="../brand/feat-ink.png" alt="">Ink Mark Resistance</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="line-block">
+      <div class="line-media"><div class="img" data-label="images/colourant.jpg" style="background-image:url('../images/colourant.jpg'),linear-gradient(135deg,#0f2a5c 0%,#1f4fa8 40%,#e3a522 70%,#3d8be0 100%)"></div></div>
+      <div>
+        <h3>Colourant</h3>
+        <p class="sub">From original to extraordinary colour</p>
+        <div class="rule"></div>
+        <p style="color:var(--ink-soft)">Expert Line is a high-performance, water-based polyurethane colourant developed for professional leather restoration and complete recolouring, powered by Vibrant Plus+ Technology.</p>
+        <div class="prod" style="margin-top:12px"><h4>Permanent colour</h4><p>Long-lasting results that hold their tone.</p></div>
+        <div class="prod"><h4>Unlimited colour</h4><p>A wide colour range for any match or custom finish.</p></div>
+        <div class="prod"><h4>Retains genuine leather feel</h4><p>Soft, natural and true to the original hand.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <span class="eyebrow">Restoration Services</span>
+    <h2>Bringing leather back to life</h2>
+    <p class="lead" style="margin-top:14px">From scratches and scuffs to wear and fading, our trained technicians restore the factory-fresh look, texture and comfort of your leather.</p>
+    <div class="svc-grid">
+      <div class="svc">
+        <div class="img" data-label="images/svc-auto.jpg" style="background-image:url('../images/svc-auto.jpg'),linear-gradient(150deg,#ece4d6,#b9a27f)"></div>
+        <div class="svc-body"><h3>Automotive &amp; Aviation Interiors</h3><p>Cleaning, protection, repair and recolouring for luxury car, aircraft and yacht interiors, including perforated leather and Alcantara.</p></div>
+      </div>
+      <div class="svc">
+        <div class="img" data-label="https://images.unsplash.com/photo-1616406432452-07bc5938759d?auto=format&fit=crop&w=1000&q=80" style="background-image:url('https://images.unsplash.com/photo-1616406432452-07bc5938759d?auto=format&fit=crop&w=1000&q=80'),linear-gradient(150deg,#3a6fd8,#14306e)"></div>
+        <div class="svc-body"><h3>Shoe Restoration &amp; Colouring</h3><p>Worn and damaged footwear restored to like-new, reviving original beauty, comfort and durability, and extending the life of every pair.</p></div>
+      </div>
+      <div class="svc">
+        <div class="img ba-split" data-label="images/svc-bags.jpg" style="background-image:url('../images/svc-bags.jpg'),linear-gradient(150deg,#8b86b8,#4a466e)"><span class="tag l">Before</span><span class="tag r">After</span></div>
+        <div class="svc-body"><h3>Bag Restoration &amp; Colouring</h3><p>Meticulous restoration and customisation of luxury bags, preserving the elegance and value of your designer pieces.</p></div>
+      </div>
+    </div>
+    <div class="ba">
+      <figure><div class="img" data-label="images/before.jpg" style="background-image:url('../images/before.jpg'),linear-gradient(150deg,#e8e2d8,#bdb3a3)"></div><figcaption>Before</figcaption></figure>
+      <figure><div class="img" data-label="images/during.jpg" style="background-image:url('../images/during.jpg'),linear-gradient(150deg,#ece7de,#c7beb0)"></div><figcaption>During</figcaption></figure>
+      <figure><div class="img" data-label="images/after.jpg" style="background-image:url('../images/after.jpg'),linear-gradient(150deg,#f2eee7,#d3cbbd)"></div><figcaption>After</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- LAB TESTING -->
+<section class="lab">
+  <div class="wrap lab-grid">
+    <div>
+      <span class="eyebrow">Lab Testing &amp; Certification</span>
+      <h2>Tested. Accredited. <span class="le">Trusted.</span></h2>
+      <div class="rule"></div>
+      <p class="lead">Every product is held to high standards of quality, safety and performance through laboratory testing with Eurofins | BLC, one of the world's leading leather testing centres.</p>
+      <div class="acc">
+        <div><b>UKAS Accredited</b><span>Testing to internationally recognised standards</span></div>
+        <div><b>CPSC Recognised</b><span>Trusted laboratory for product safety compliance</span></div>
+        <div><b>LWG Approved Auditors</b><span>Qualified to conduct Leather Working Group audits</span></div>
+      </div>
+    </div>
+    <div class="img" data-label="images/blc-lab.jpg"></div>
+  </div>
+</section>
+
+<!-- LECADEMY -->
+<section class="academy" id="lecademy">
+  <div class="wrap acad-grid">
+    <div>
+      <div class="acad-title">LEATHER<br><span class="le">RESTORATION</span><span class="t">TRAINING</span></div>
+      <img class="lecademy-img" src="../brand/lecademy.png" alt="Lecademy · Learn &amp; Practice">
+      <p class="lead" style="margin-top:20px">Hands-on professional training in cleaning, colour matching, repair and recolouring, taught with Expert Line materials by LeTech trainers. For detailers, upholsterers, restorers and new entrepreneurs.</p>
+      <a href="https://wa.me/918637769807?text=Hi%20LeTech%2C%20I%27d%20like%20to%20know%20about%20Lecademy%20training" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:26px">Enquire About Training</a>
+    </div>
+    <div class="acad-photos">
+      <div class="img wide" data-label="images/lecademy-trainer.jpg" style="background-image:url('../images/lecademy-trainer.jpg'),linear-gradient(150deg,#f2f2f2,#cfcfcf)"></div>
+      <div class="img" data-label="images/training-2.jpg" style="background-image:url('../images/training-2.jpg'),linear-gradient(150deg,#d9d2c8,#8c8274)"></div>
+      <div class="img" data-label="images/training-4.jpg" style="background-image:url('../images/training-4.jpg'),linear-gradient(150deg,#3b3b3b,#ef7a33)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-intro">
+      <span class="eyebrow">Contact</span>
+      <h2>Talk to <span class="le">Le</span>Tech India</h2>
+      <div class="rule"></div>
+      <p class="lead">Product enquiries, training and trade. Reach us on WhatsApp, phone or email and we will get back to you quickly.</p>
+    </div>
+    <div class="c-card">
+      <h3 style="font-size:1.4rem;margin-bottom:10px">Contact us</h3>
+      <div class="c-row"><svg viewBox="0 0 24 24"><path d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <div><small>Registered Office</small>Inter Continental Venture<br>Unit #2010, Ground Floor, Building 2<br>Creaticity, Yerawada<br>Pune 411006, India</div></div>
+      <div class="c-row"><svg viewBox="0 0 24 24"><path d="M22 17v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3l2 5-2.5 1.5a11 11 0 0 0 6 6L14 12l5 2z"/></svg>
+        <div><small>Call us</small><a href="tel:+918637769807">+91 86377 69807</a></div></div>
+      <div class="c-row"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-13 8l-5 1 1-5a9 9 0 1 1 17-4z"/></svg>
+        <div><small>WhatsApp enquiries · +91 86377 69807</small><a href="https://wa.me/918637769807?text=Hi%20LeTech%2C%20I%20have%20an%20enquiry" target="_blank" rel="noopener">Message us on WhatsApp</a></div></div>
+      <div class="c-row"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        <div><small>Email</small><a href="mailto:admin@le-tech.in">admin@le-tech.in</a></div></div>
+      <div class="c-row"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        <div><small>Instagram</small><a href="https://www.instagram.com/letechindia/" target="_blank" rel="noopener">@letechindia</a></div></div>
+      <a href="https://wa.me/918637769807?text=Hi%20LeTech%2C%20I%20have%20an%20enquiry" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center">Enquire on WhatsApp</a>    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="#top" class="logo"><img class="logo-img" src="../brand/letech-logo-white.png" alt="LeTech care &amp; restoration"></a>
+        <p style="margin-top:18px;max-width:320px">Premium leather care and restoration materials, made in Northampton, UK. Professional leather care and restoration in India.</p>      </div>
+      <div><h5>Expert Line</h5><ul><li><a href="#expert-line">Cleaners</a></li><li><a href="#expert-line">Protection</a></li><li><a href="#expert-line">Colourant</a></li></ul></div>
+      <div><h5>LeTech India</h5><ul><li><a href="#services">Restoration Services</a></li><li><a href="#lecademy">Lecademy Training</a></li><li><a href="#about">About Us</a></li></ul></div>
+      <div><h5>Get in touch</h5><ul><li><a href="tel:+918637769807">+91 86377 69807</a></li><li><a href="https://wa.me/918637769807?text=Hi%20LeTech%2C%20I%20have%20an%20enquiry" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:admin@le-tech.in">admin@le-tech.in</a></li><li><a href="https://www.instagram.com/letechindia/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://le-tech.co.uk/" target="_blank" rel="noopener">LeTech UK</a></li></ul></div>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="yr">2026</span> LeTech India. All rights reserved.</span>
+      <span>Developed &amp; manufactured in Northampton, UK</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/918637769807?text=Hi%20LeTech%2C%20I%20have%20an%20enquiry" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.5.3-.5.9-1.6a.6.6 0 0 0 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.9.8a3.3 3.3 0 0 0 2.1-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.7-.5z"/></svg>
+</a>
+
+<script>
+  // Close mobile menu on link tap
+  document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+  // Hide placeholder labels once a real photo loads
+  document.querySelectorAll('.img[data-label]').forEach(el=>{
+    const src=el.getAttribute('data-label');
+    const probe=new Image();
+    probe.onload=()=>el.classList.add('has-photo');
+    probe.src=src;
+  });
+  document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
